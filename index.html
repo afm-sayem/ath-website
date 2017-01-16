@@ -20,6 +20,7 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.31/spectre.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <link rel="stylesheet" href="css/custom.css">
 
@@ -37,60 +38,77 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <div class="homepage&#45;hero&#45;module"> -->
-  <!--   <div class="video&#45;container"> -->
-  <!--     <div class="filter"></div> -->
-  <!--     <video autoplay loop class="fillWidth"> -->
-  <!--       <source src="video/bg.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
-  <!--         <source src="video/bg.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
-  <!--     </video> -->
-  <!--     <div class="poster hidden"> -->
-  <!--       <img src="images/herobg.jpeg" alt=""> -->
-  <!--     </div> -->
-  <!--   </div> -->
-  <!-- </div> -->
-  <!--  -->
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h4 class="hero-heading">Create. Share. Inspire.</h4>
-        </div>
-        <div class="one-half column phones">
-          <!-- <object id="svg1" data="/images/happy.svg" type="image/svg+xml"></object> -->
-          <!-- <object id="svg1" data="/images/mad.svg" type="image/svg+xml"></object> -->
-        </div>
+  <div class="homepage-hero-module">
+    <div class="video-container">
+      <div class="section hero">
+        <h4 class="hero-heading">Create. Share. Inspire.</h4>
         <div class="signup">
           <label for="exampleEmailInput">Interested in becoming a reviewer?</label>
           <input class="u-half-width" type="email" placeholder="Your Email" id="exampleEmailInput">
           <a class="button" href="http://getskeleton.com">Apply</a>
         </div>
       </div>
+      <div class="filter"></div>
+      <h4 class="hero-heading">Create. Share. Inspire.</h4>
+      <video autoplay loop class="fillWidth">
+        <source poster="images/bg.jpg" src="video/restaurant.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="video/bg.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+      </video>
     </div>
   </div>
-
+  <!--  -->
+  <!--  -->
   <div class="section values">
-    <h4 class="hero-heading">Latest Reviews</h4>
+    <h4 class="hero-heading">Latest Delicacies</h4>
     <div class="container">
       <div class="row">
+
         <div class="one-third column value">
-          <h5 class="username">Demo User</h5>
-          <img class="avatar" src=""></img>
-          <div class="star">5 star</div>
-          <h5 class="product">Demo Item</h5>
-          <img class="product-img" src=""></img>
-          <h5 class="provider">Demo Shop</h5>
-          <p class="review">The croissants were among the bests I have ever tasted. The texture was perfect and not too crumbly</p>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/croissant.jpg" class="img-responsive" />
+            </div>
+            <div class="card-header">
+              <h4 class="card-title">Classic French Croissants</h4>
+              <h6 class="card-meta">Krispy Kreme</h6>
+            </div>
+            <div class="card-body">
+              Easily the best croissants in town, bar the homemade ones from the french district. Not too sweet nor crumbly. The price is reasonable as well.
+            </div>
+            <div class="card-footer">
+              <button class="btn">Write a Review</button>
+            </div>
+          </div>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">90%</h2>
-          <h5 class="value-heading">Multi-device Users</h5>
-          <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/waffles.png" class="img-responsive" />
+            </div>
+            <div class="card-header">
+              <h4 class="card-title">Belgian Waffles</h4>
+              <h6 class="card-meta">Nana's Gourmet Bliss</h6>
+            </div>
+            <div class="card-body">A tremendous work on the texture, the surface has just enough thikness and not oily unlike others. A definite recommendation for a late afternoon snack.</div>
+            <div class="card-footer">
+              <button class="btn">Write a Review</button>
+            </div>
+          </div>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">66%</h2>
-          <h5 class="value-heading">Sad Users</h5>
-          <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/granolabar.jpg" class="img-responsive" />
+            </div>
+            <div class="card-header">
+              <h4 class="card-title">Homemade Granola Bars</h4>
+              <h6 class="card-meta">Nana's Gourmet Bliss</h6>
+            </div>
+            <div class="card-body">A tremendous work on the texture, the surface has just enough thikness and not oily unlike others. A definite recommendation for a late afternoon snack.</div>
+            <div class="card-footer">
+              <button class="btn">Write a Review</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
