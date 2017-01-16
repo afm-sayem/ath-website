@@ -40,15 +40,16 @@
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  /* background-image: url('../images/bg.jpg'); */
-  /* background-size: cover; */
-  color: #fff;
-  background-color: #505a84;
+  background-color: #1b100d;
+  background-image: linear-gradient(to bottom, #1b100d, #fff);
   padding-bottom: 5rem;
 }
 .value-multiplier {
   margin-bottom: .5rem;
   color: #11DFC7;
+}
+.values > .hero-heading {
+  color: white;
 }
 .value-heading {
   margin-bottom: .3rem;
@@ -117,6 +118,9 @@
   .hero-heading {
     font-size: 2.6rem;
   }
+  .section + .get-help {
+    padding: 4rem 0 10rem;
+  }
   .section {
     padding: 14rem 0 15rem;
   }
@@ -147,6 +151,9 @@
   .section {
     padding: 20rem 0 19rem;
   }
+  .section + .get-help {
+    padding: 4rem 0 10rem;
+  }
   .hero {
     padding: 22rem 0;
   }
@@ -165,8 +172,6 @@
 
 
 //  CUSTOM
-SS
-JavaScript
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -207,4 +212,18 @@ JavaScript
 }
 .video-container video.fillWidth {
     width: 100%;
+}
+
+// card
+.card {
+  color: black;
+}
+
+.video-container > .hero {
+  z-index: 1000;
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  color: grey;
 }
