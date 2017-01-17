@@ -25,23 +25,22 @@
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.phones {
-  position: relative;
+#cover {
+  color: white;
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  height: 100%;
+  bottom: 0;
 }
-.phone {
-  position: relative;
-  max-width: 80%;
-  margin: 3rem auto -12rem;
-}
-.phone + .phone {
-  display: none;
+#cover > .button {
+  background-color: #505a84
 }
 
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-color: #1b100d;
-  background-image: linear-gradient(to bottom, #1b100d, #fff);
+  background-color: #021818;
+  background-image: linear-gradient(to bottom, #021818, #fff);
   padding-bottom: 5rem;
 }
 .value-multiplier {
@@ -80,76 +79,18 @@
   margin-bottom: 4rem;
 }
 
-//  video
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-.video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
-}
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-}
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
-}
-
 // card
 .card {
   color: black;
 }
-
-.video-container > .hero {
-  z-index: 1000;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
     padding: 12rem 0 11rem;
   }
-  .video-container > .hero {
-    padding-bottom: 12rem;
-    /* text-align: left; */
-    height: 165px;
-    color: white;
-  }
   .hero-heading {
-    /* font-size: 2.4rem; */
+    font-size: 2.4rem;
   }
 }
 
@@ -175,15 +116,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .phone {
-    top: -14rem;
-    right: 5rem;
-    max-height: 510px;
-  }
-  .phone + .phone {
-    top: -12rem;
-    max-height: 472px;
-  }
   .categories {
     padding: 15rem 0 8rem;
   }
@@ -194,9 +126,6 @@
   .section {
     padding: 20rem 0 19rem;
   }
-  .video-container > .hero {
-    color: grey;
-  }
   .section + .get-help {
     padding: 4rem 0 10rem;
   }
@@ -206,14 +135,5 @@
   .hero-heading {
     font-size: 3.0rem;
   }
-  .phone {
-    top: -16rem;
-    max-height: 615px;
-  }
-  .phone + .phone {
-    top: -14rem;
-    max-height: 570px;
-  }
 }
-
 
