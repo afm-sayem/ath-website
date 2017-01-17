@@ -1,9 +1,23 @@
-// set interval item entry, 
-// then change face
-// then set rating
-// fade out rating
-// then item exit
-// randomize
-$( document ).ready(function() {
+$(document).ready(function() {
+  function openSignup() {
+    $('.open-dialog').each(function (index, element) {
+      element.onclick = function () {
+        $('.modal')[0].classList.add('active');
+      };
+    });
+  }
 
-}
+  function closeSignup() {
+    $('.close-dialog').each(function (index, element) {
+      element.onclick = function () {
+        $('.modal')[0].classList.remove('active');
+      };
+    });
+  }
+
+  function init() {
+    openSignup();
+    closeSignup();
+  }
+  init();
+})
