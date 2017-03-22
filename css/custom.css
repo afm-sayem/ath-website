@@ -39,6 +39,10 @@
   bottom: 0;
 }
 
+.signup {
+  padding-top: 30%;
+}
+
 .subscribe {
   max-width: 300px;
   margin: auto;
