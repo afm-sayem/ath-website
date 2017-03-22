@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Athena Reviews</title>
+  <title>Athena Desk</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -20,14 +20,16 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.31/spectre.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.10/spectre.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.10/spectre-exp.min.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="css/custom.css">
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.1.3/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js"></script>
+  <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
   <script src="js/landing.js"></script>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,82 +41,133 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="cover" class="section hero">
-    <h1>Athena Reviews</h1>
-    <h4 class="hero-heading">Create. Share. Inspire.</h4>
+    <h1>Empowering Enthusiasts</h1>
+    <h4 class="hero-heading">to discover exciting products</h4>
     <div class="signup">
       <form action="//athenadesk.us14.list-manage.com/subscribe/post?u=202bb31ba8902eb5bc2415e42&amp;id=0f61bb52aa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <label for="exampleEmailInput">Interested in becoming a reviewer?</label>
-        <input type="email" name="EMAIL" placeholder="Your Email">
-        <!-- perevent form bot signups-->
+        <label for="exampleEmailInput">What's the story?</label>
+        <div class="input-group subscribe">
+          <input class="form-input" type="email" name="EMAIL" placeholder="Your Email">
+          <button value="Subscribe" type="submit" class="btn btn-primary input-group-btn">Submit</button>
+        </div>
+        <!-- prevent form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_202bb31ba8902eb5bc2415e42_0f61bb52aa" tabindex="-1" value="">
         </div>
-        <input class="button button-primary" value="Apply" type="submit" href="http://getskeleton.com">
       </form>
     </div>
   </div>
 
   <div class="section values">
-    <h4 class="hero-heading">Latest Delicacies</h4>
+    <h4 class="hero-heading">Communities</h4>
     <div class="container">
-      <div class="row">
-
-        <div class="one-third column value">
+      <div class="columns">
+        <div class="column col-4 col-sm-12">
           <div class="card">
             <div class="card-image">
-              <img src="images/croissant.jpg" class="img-responsive" />
+              <img src="images/kpop.jpg" class="img-responsive" />
             </div>
             <div class="card-header">
-              <h4 class="card-title">Classic French Croissants</h4>
-              <h6 class="card-meta">Krispy Kreme</h6>
+              <h4 class="card-title">K-Pop</h4>
+              <h6 class="card-meta">23,897 followers</h6>
             </div>
             <div class="card-body">
-              Easily the best croissants in town, bar the homemade ones from the french district. Not too sweet nor crumbly. The price is reasonable as well.
+              <label class="chip">
+                Albums
+              </label>
+              <label class="chip">
+                Concerts
+              </label>
+              <label class="chip">
+                Collectibles
+              </label>
+              <p>
+              All things K-Pop
+              </p>
             </div>
             <div class="card-footer">
-              <button class="btn open-dialog">Write a Review</button>
+              <button class="btn btn-lg open-dialog">Join the Community</button>
             </div>
           </div>
         </div>
-        <div class="one-third column value">
+        <div class="column col-4 col-sm-12">
           <div class="card">
             <div class="card-image">
-              <img src="images/waffles.png" class="img-responsive" />
+              <img src="images/running.jpg" class="img-responsive" />
             </div>
             <div class="card-header">
-              <h4 class="card-title">Belgian Waffles</h4>
-              <h6 class="card-meta">Nana's Gourmet Bliss</h6>
+              <h4 class="card-title">Runners</h4>
+              <h6 class="card-meta">19,896 followers</h6>
             </div>
-            <div class="card-body">Beautiful texture. The surface has just enough thikness and not oily like regular shops. A definite recommendation for a late afternoon snack.</div>
+            <div class="card-body">
+              <label class="chip">
+                Tips
+              </label>
+              <label class="chip">
+                Accessories
+              </label>
+              <label class="chip">
+                Find a Partner
+              </label></br>
+              Bring it on!
+            </div>
             <div class="card-footer">
-              <button class="btn open-dialog">Write a Review</button>
+              <button class="btn btn-lg open-dialog">Join the Community</button>
             </div>
           </div>
         </div>
-        <div class="one-third column value">
+        <div class="column col-4 col-sm-12">
           <div class="card">
             <div class="card-image">
-              <img src="images/granolabar.jpg" class="img-responsive" />
+              <img src="images/hairstyle.jpg" class="img-responsive" />
             </div>
             <div class="card-header">
-              <h4 class="card-title">Homemade Granola Bars</h4>
-              <h6 class="card-meta">Nana's Gourmet Bliss</h6>
+              <h4 class="card-title">Hairstyle</h4>
+              <h6 class="card-meta">34,782 followers</h6>
             </div>
-            <div class="card-body">A healthy mix of almonds, nuts, corn and honey, this is the perfect companion inbetween meals on a busy day. Very nutritous and tastes great.</div>
+            <div class="card-body">
+              <label class="chip">
+                Hairstyles
+              </label>
+              <label class="chip">
+                Hair care
+              </label>
+              <label class="chip">
+                Braids
+              </label></br>
+              Your hair is your canvas
+            </div>
             <div class="card-footer">
-              <button class="btn open-dialog">Write a Review</button>
+              <button class="btn open-dialog">Join the Community</button>
             </div>
           </div>
         </div>
       </div>
+      <button class="btn btn-lg btn-link open-dialog">More</button>
     </div>
   </div>
 
+  <!-- <div class="section facebook"> -->
+  <!--   <h4 class="hero&#45;heading">Feedbacks</h4> -->
+  <!--   <div class="container"> -->
+  <!--     <div id="facebook&#45;carousel" class="carousel&#45;cell"> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+
+  <!-- <div class="section instagram"> -->
+  <!--   <h4 class="hero&#45;heading">Rawr!</h4> -->
+  <!--   <div class="container"> -->
+  <!--     <div id="instagram&#45;carousel" class="carousel&#45;cell"> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+
   <div class="section get-help">
     <div class="container">
-      <h3 class="section-heading">Want to learn more?</h3>
-      <p class="section-description">We share exciting new content almost everyday of the week about food, lifestyle and things that interests us!</p>
-      <a class="button" href="http://blog.athenadesk.com">Checkout our blog!</a>
+      <h3 class="section-heading">Get updates about things you love</h3>
+      <!-- <p class="section&#45;description">Want </p> -->
+      <a class="btn btn-lg btn-primary" href="http://blog.novelship.com">Checkout our blog!</a>
     </div>
   </div>
 
@@ -125,17 +178,19 @@
       <div class="modal-header">
         <button class="btn btn-clear float-right close-dialog"></button>
         <div class="modal-title">
-          <h4>Join the team of elite reviewers</h4>
+          <h4>We are super close to launch</h4>
         </div>
       </div>
       <div class="modal-body">
         <div class="content">
           <p>
-            We are building an army of reviewers across product segments. Enter your email below and we will start the process of getting your name on the list.
+          Get notified when we open shop
           </p>
           <form action="//athenadesk.us14.list-manage.com/subscribe/post?u=202bb31ba8902eb5bc2415e42&amp;id=0f61bb52aa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <input type="email" name="EMAIL" placeholder="Your Email">
-            <input class="btn btn-primary" value="Apply" type="submit" href="http://getskeleton.com">
+            <div class="input-group">
+              <input class="form-input" type="email" name="EMAIL" placeholder="Your Email">
+              <input class="btn btn-primary input-group-btn" value="Let me know" type="submit" href="http://getskeleton.com">
+            </div>
             <!-- perevent form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true">
               <input type="text" name="b_202bb31ba8902eb5bc2415e42_0f61bb52aa" tabindex="-1" value="">

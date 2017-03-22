@@ -1,17 +1,17 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button {
-  background-color: #505a84;
-  border-color: #505a84;
-  border-radius: 100px;
-  color: #fff;
-}
-
-.button:hover {
-  color: white;
-  text-shadow: 0px 0px 2px white; 
-}
-
+/* .button { */
+/*   background-color: #505a84; */
+/*   border-color: #505a84; */
+/*   border-radius: 100px; */
+/*   color: #fff; */
+/* } */
+/*  */
+/* .button:hover { */
+/*   color: white; */
+/*   text-shadow: 0px 0px 2px white;  */
+/* } */
+/*  */
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -23,47 +23,44 @@
   margin-bottom: 1.2rem;
 }
 
+.card-image {
+  max-height: 240px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.hero {
-  background-position: -200px;
-}
 #cover {
   color: white;
   background-image: url('../images/hero.jpg');
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   bottom: 0;
 }
-#cover > .button {
-  background-color: #505a84
+
+.subscribe {
+  max-width: 300px;
+  margin: auto;
 }
 
-/* Values
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.values {
-  background-color: #021818;
-  background-image: linear-gradient(to bottom, #021818, #fff);
-  padding-bottom: 5rem;
-}
-.value-multiplier {
-  margin-bottom: .5rem;
-  color: #11DFC7;
-}
-.values > .hero-heading {
-  color: white;
-}
-.value-heading {
-  margin-bottom: .3rem;
-}
-.value-description {
-  opacity: .8;
-  font-weight: 300;
+/* Facebook */
+
+/* .carousel-cell { */
+/*   width: 28%; */
+/*   height: 200px; */
+/*   margin-right: 10px; */
+/*   border-radius: 5px; */
+/* } */
+/*  */
+/* .carousel-cell.is-selected { */
+/*   background: #ED2; */
+/* } */
+
+.carousel-cell > img {
+  height: 400px;
 }
 
-.signup {
-  padding-top: 14rem;
-}
 
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -73,15 +70,6 @@
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.categories {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
-}
-.categories .section-description { 
-  margin-bottom: 4rem;
-}
-
 // card
 .card {
   color: black;
